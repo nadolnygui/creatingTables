@@ -4,23 +4,63 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Inter", serif;
+    font-weight: 300;
+}
+
 header {
-    background-color: green;
+    background-color: #4a90e2;
     color: #fff;
     padding: 12px;
 }
 
 header h1 {
-    text-align: center;
+    font-family: "Oswald", serif;
+    font-weight: 400;
+    padding: 12px;
 }
 
 form {
     display: flex;
-    justify-content: center; 
-    gap: 10px; 
-    max-width: 760px;
-    width: 100%;
-    margin: 30px auto 0; 
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #4a90e2;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #357ABD;
+    box-shadow: 0 0 5px rgba(53, 122, 189, 0.5);
+}
+
+button, .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #4a90e2;
+    font-family: "Raleway", serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 10px;
+    cursor: pointer;
+    width: 100px;
+    margin: 20px auto 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.button:hover {
+    background-color: #357ABD;
 }
 
 .container {
@@ -31,17 +71,20 @@ form {
 }
 
 table {
-    border: 1px solid black;
-    border-collapse: collapse;
+    width: 100%;
     max-width: 760px;
+    border-collapse: collapse;
+    border: 1px solid #4a90e2;
 }
 
-th, td{
-    padding: 16px;
-    border: 1px solid black;
+th, td {
+    padding: 12px;
+    border: 1px solid #a0c4ff;
+    text-align: left;
 }
 
-table th {
-    font-size: 18px;
+th {
+    background-color: #a0c4ff;
+    color: white;
+    font-weight: bold;
 }
-
